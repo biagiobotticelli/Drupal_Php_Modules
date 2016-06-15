@@ -146,6 +146,7 @@ The links to other GitHub sections of the GroupTracking project are:
 
 - Webserver: 
 https://github.com/StefanoConoci/SmartTeamTrackingServer
+
 - Android Application: 
 https://github.com/draugvar/SmartTeamTracking
 
