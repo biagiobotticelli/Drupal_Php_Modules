@@ -1,7 +1,9 @@
 =======================================
 GroupTracking Drupal WebApp PHP Modules
 =======================================
-.. image:: https://github.com/biagiobotticelli/Drupal_Php_Modules/blob/master/images/logo.jpg :align: center
+
+.. image:: https://github.com/biagiobotticelli/Drupal_Php_Modules/blob/master/images/logo.jpg 
+
 Track your friends everywhere!
 
 GroupTracking is an Android application that wants to allow to create group of friends obtained by Facebook
@@ -20,6 +22,7 @@ How does GroupTracking make tracking?
 -------------------------------------
 To tracking people, the GroupTracking Android app uses GPS and bluetooth of the smartphone.
 An Android Service searches for beacons through the bluetooth:
+
 - **NO** beacon is found: the app uses the last GPS coordinates to get the position;
 - A beacon is found: the app uses the coordinates of the nearest beacon to get the postion;
 
@@ -64,22 +67,28 @@ Webserver: https://github.com/StefanoConoci/SmartTeamTrackingServer
 
 Android Application: https://github.com/draugvar/SmartTeamTracking
 
-You can find personal information about us at:
+You can find us on LinkedIn Profiles: 
+'BiagioBotticelli
+<https://it.linkedin.com/in/biagio-botticelli-444b87105/en>'_. ,
+'Stefano Conoci
+<https://it.linkedin.com/in/stefano-conoci-06501844>'_. , 
+'Davide Meacci
+<https://it.linkedin.com/in/davide-meacci-ab065bb7/en>'_. , 
+'Salvatore Rivieccio 
+<https://it.linkedin.com/in/salvatore-rivieccio-653644b7/en>'_. .
 
-Biagio Botticelli: https://it.linkedin.com/in/biagio-botticelli-444b87105/en
+The project was developed for the course of 
+'Pervasive Systems 2016
+<http://ichatz.me/index.php/Site/PervasiveSystems2016>'_.
+held by Prof. 
+'Ioannis Chatzigiannakis
+<http://ichatz.me/index.php>'_. 
+within the 
+'Master of Science in Computer Science of University if Rome "La Sapienza"
+<http://cclii.dis.uniroma1.it/?q=msecs>'_. . 
 
-Stefano Conoci: https://it.linkedin.com/in/stefano-conoci-06501844
+Additional informations about the project can be found in the presentation of the project on 
+'SlideShare
+<http://www.slideshare.net/BiagioBotticelli/smart-team-tracking-project-group-tracking>'_.
 
-Davide Meacci: https://it.linkedin.com/in/davide-meacci-ab065bb7/en
 
-Salvatore Rivieccio: https://it.linkedin.com/in/salvatore-rivieccio-653644b7/en
-
-The project was developed for the course of "Pervasive Systems 2016": http://ichatz.me/index.php/Site/PervasiveSystems2016
-
-held by Prof. Ioannis Chatzigiannakis: http://ichatz.me/index.php
-
-within the Master of Science in Computer Science of University if Rome "La Sapienza". 
-
-Additional informations about the project can be found in the presentation of the project on SlideShare: 
-
-http://www.slideshare.net/BiagioBotticelli/smart-team-tracking-project-group-tracking
