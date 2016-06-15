@@ -144,24 +144,19 @@ Additional Informations
 ---------------------------------
 The links to other GitHub sections of the GroupTracking project are:
 
-Webserver: 
+- Webserver: 
 https://github.com/StefanoConoci/SmartTeamTrackingServer
-
-
-Android Application: 
+- Android Application: 
 https://github.com/draugvar/SmartTeamTracking
 
 
 
 You can find us on LinkedIn Profiles:
 
-BiagioBotticelli: https://it.linkedin.com/in/biagio-botticelli-444b87105/en ;
-
-Stefano Conoci: https://it.linkedin.com/in/stefano-conoci-06501844 ; 
-
-Davide Meacci: https://it.linkedin.com/in/davide-meacci-ab065bb7/en ;
-
-Salvatore Rivieccio: https://it.linkedin.com/in/salvatore-rivieccio-653644b7/en .
+- BiagioBotticelli: https://it.linkedin.com/in/biagio-botticelli-444b87105/en ;
+- Stefano Conoci: https://it.linkedin.com/in/stefano-conoci-06501844 ; 
+- Davide Meacci: https://it.linkedin.com/in/davide-meacci-ab065bb7/en ;
+- Salvatore Rivieccio: https://it.linkedin.com/in/salvatore-rivieccio-653644b7/en .
 
 The project was developed for the course of "Pervasive Systems 2016", 
 held by Prof. Ioannis Chatzigiannakis
