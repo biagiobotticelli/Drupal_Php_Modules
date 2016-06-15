@@ -1,92 +1,70 @@
-Recipex
+GroupTracking Drupal WebApp PHP Modules
 =======
-.. image:: https://github.com/FabFari/recipex/blob/master/app/screenshot/logo_wide.jpg
+.. image:: https://github.com/biagiobotticelli/Drupal_Php_Modules/blob/master/images/logo.jpg
+.. image:: https://github.com/biagiobotticelli/Drupal_Php_Modules/blob/master/images/drupal.png
    :align: center
-Your personal caregiver and lifestyle makeover.
+Track your friends everywhere!
 
-RecipeX is an android application that has two main goals:
-
-- Helping patients to follow their therapies, simplifying the communication with the health care assistants
-- Giving health care assistants a simple and useful tool to keep track of the therapies of their assisted
-
-Main functionalities
---------------------
-The main functionalities offered by the application are:
-
-- Record vital signs and nursing prescriptions, keeping track of your progress within long term treatments
-- Manage a shared Google Calendar with your caregiver (and all those you would like to monitor your health), with all your current treatments and performed measurements
-- Send mail notifications through Google calendar, to remind you about your therapeutic requirements
-- The possibility to contact, directly from the application, your caregivers and family members
-
-Architecture
-------------
-
-.. image:: https://github.com/FabFari/recipex/blob/master/app/screenshot/architecture.png
+GroupTracking is an Android application that wants to allow to create group of friends obtained by Facebook
+and tracking their position outside building but also INSIDE! By using Beacons!
+.. image:: https://github.com/biagiobotticelli/Drupal_Php_Modules/blob/master/images/beacons.png
    :align: center
 
-The frontend is a mobile application (Android).
-The backend is a Python application running on Google App Engine.
-The frontend interacts with a Web Service API offered by the GAE backend through Google Cloud Endpoints
-Through the GAE backend, the app access to:
-Google + API, to register the user
-Google Calendar API, to store the history of measurement and therapies and to notify the user about its therapeutical requirements.
+With GroupTracking you can create a group of friends, define a range in which your friends will be tracked and 
+get their position directly on a map. Friends that are out of the range will NOT be tracked!
 
-Screenshot
-----------
-These are the screenshot of the most important application sections
-
-Home
-----
-
-.. image:: https://github.com/FabFari/recipex/blob/master/app/screenshot/home.jpg
-   :align: left
-   
-.. image:: https://github.com/FabFari/recipex/blob/master/app/screenshot/drawer.jpg
-   :align: right
-   
-Profile
--------
-
-.. image:: https://github.com/FabFari/recipex/blob/master/app/screenshot/profile_pic.jpg
-   :align: left
-   
-.. image:: https://github.com/FabFari/recipex/blob/master/app/screenshot/profile_open.jpg
+.. image:: https://github.com/biagiobotticelli/Drupal_Php_Modules/blob/master/images/map.png
    :align: center
 
-.. image:: https://github.com/FabFari/recipex/blob/master/app/screenshot/profile_button.jpg
-   :align: right
+How does GroupTracking make tracking?
+-------------------------------------
+To tracking people, the GroupTracking Android app uses GPS and bluetooth of the smartphone.
+An Android Service searches for beacons through the bluetooth:
+- **NO** beacon is found: the app uses the last GPS coordinates to get the position;
+- A beacon is found: the app uses the coordinates of the nearest beacon to get the postion;
 
-Add measurement
----------------
+.. image:: https://github.com/FabFari/recipex/blob/master/app/screenshot/arch.png
+   :align: center
 
-.. image:: https://github.com/FabFari/recipex/blob/master/app/screenshot/home_button.jpg
-   :align: left
-   
-.. image:: https://github.com/FabFari/recipex/blob/master/app/screenshot/add_measurement.jpg
-   :align: right
-   
-Therapies and add new therapy
------------------------------
+Why do we insert a Drupal WebApp in the system?
+-----------------------------------------------
+The Android application gets the data that it needs (such us beacons, latitude and longitude, range, etc.)
+by REST calls made to an existent webserver.
+In order to communicate with the webserver, we develop the Drupal webapp with the following functions:
+- **Get a list of Beacons**
+- **Add a Beacon**
+- **Delete an existent Beacon**
 
-.. image:: https://github.com/FabFari/recipex/blob/master/app/screenshot/therapies.jpg
-   :align: left
+getBeacons.php
+--------------
+The first function is to get a list of the beacons that are available in the system.
+The php module create an empty page:
+.. image:: https://github.com/FabFari/recipex/blob/master/app/screenshot/getBeacon1.png
+   :align: center
+when the button "Get Beacons" is clicked: 
+.. image:: https://github.com/FabFari/recipex/blob/master/app/screenshot/getBeacon2.png
+   :align: center
+the module makes a GET request to the REST webserver to obtain the list of the available beacons of the system.
+.. image:: https://github.com/FabFari/recipex/blob/master/app/screenshot/getBeacon3.png
+   :align: center
+
+
    
-.. image:: https://github.com/FabFari/recipex/blob/master/app/screenshot/add_therapy.jpg
-   :align: right
-   
-Additional info about the project
+Additional Informations
 ---------------------------------
+The links to other GitHub sections of the GroupTracking project are:
+Webserver: https://github.com/StefanoConoci/SmartTeamTrackingServer
+Android Application: https://github.com/draugvar/SmartTeamTracking
 
 You can find personal information about us at:
-https://it.linkedin.com/in/fabrizio-farinacci-496679116
-https://it.linkedin.com/in/sara-veterini-667684116
+Biagio Botticelli: https://it.linkedin.com/in/biagio-botticelli-444b87105/en
+Stefano Conoci: https://it.linkedin.com/in/stefano-conoci-06501844
+Davide Meacci: https://it.linkedin.com/in/davide-meacci-ab065bb7/en
+Salvatore Rivieccio: https://it.linkedin.com/in/salvatore-rivieccio-653644b7/en
 
-The project was developed and has been presented within the course of "Pervasive Systems", 
-held by Prof. Ioannis Chatzigiannakis within the Master of Science in Computer Science (MSE-CS),
-at University if Rome "La Sapienza". Informations about the course are available in the following page:
-http://ichatz.me/index.php/Site/PervasiveSystems2016.
+The project was developed for the course of "Pervasive Systems 2016": <http://ichatz.me/index.php/Site/PervasiveSystems2016>
+held by Prof. Ioannis Chatzigiannakis: http://ichatz.me/index.php
+within the Master of Science in Computer Science of University if Rome "La Sapienza". 
 
-Additional informations about the project can be found in the following Slideshare presentations:
-http://www.slideshare.net/FabrizioFarinacci1/recipex-your-personal-caregiver-and-lifestyle-makeover.
-
-http://www.slideshare.net/FabrizioFarinacci1/recipex-your-personal-caregiver-and-lifestyle-makeover-62091050
+Additional informations about the project can be found in the presentation of the project on SlideShare: 
+http://www.slideshare.net/BiagioBotticelli/smart-team-tracking-project-group-tracking
