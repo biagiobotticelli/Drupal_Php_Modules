@@ -157,6 +157,7 @@ You can find us on LinkedIn Profiles:
 - Salvatore Rivieccio: https://it.linkedin.com/in/salvatore-rivieccio-653644b7/en .
 
 Additional informations on the SlideShare presentation:
+
 http://www.slideshare.net/BiagioBotticelli/smart-team-tracking-project-group-tracking
 
 The project was developed for the course of "Pervasive Systems 2016", 
