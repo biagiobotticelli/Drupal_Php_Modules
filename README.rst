@@ -141,15 +141,12 @@ If the beacon is successfully deleted from the system, a message will be display
 
    
 Additional Informations
----------------------------------
+-----------------------
 The links to other GitHub sections of the GroupTracking project are:
 
-- Webserver: 
-https://github.com/StefanoConoci/SmartTeamTrackingServer
+- Webserver: https://github.com/StefanoConoci/SmartTeamTrackingServer
 
-- Android Application: 
-https://github.com/draugvar/SmartTeamTracking
-
+- Android Application: https://github.com/draugvar/SmartTeamTracking
 
 
 You can find us on LinkedIn Profiles:
@@ -159,10 +156,16 @@ You can find us on LinkedIn Profiles:
 - Davide Meacci: https://it.linkedin.com/in/davide-meacci-ab065bb7/en ;
 - Salvatore Rivieccio: https://it.linkedin.com/in/salvatore-rivieccio-653644b7/en .
 
+Additional informations on the SlideShare presentation:
+http://www.slideshare.net/BiagioBotticelli/smart-team-tracking-project-group-tracking
+
 The project was developed for the course of "Pervasive Systems 2016", 
 held by Prof. Ioannis Chatzigiannakis
 within the Master of Science in Computer Science of University of Rome "La Sapienza".
 
+
+Other Links
+-----------
 
 Homepage of Pervasive Systems 2016:
 http://ichatz.me/index.php/Site/PervasiveSystems2016
@@ -175,8 +178,6 @@ http://cclii.dis.uniroma1.it/?q=msecs
 
 
 
-Additional informations about the project can be found in the presentation of the project on SlideShare:
 
-http://www.slideshare.net/BiagioBotticelli/smart-team-tracking-project-group-tracking
 
 
