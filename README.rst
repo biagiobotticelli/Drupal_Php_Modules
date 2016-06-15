@@ -2,8 +2,12 @@
 GroupTracking Drupal WebApp PHP Modules
 =======================================
 
+** Track your friends everywhere! ** 
 .. image:: https://github.com/biagiobotticelli/Drupal_Php_Modules/blob/master/images/logo.jpg 
-Track your friends everywhere!
+	:height: 100px
+   :width: 200 px
+   :align: right
+
 
 GroupTracking is an Android application that wants to allow to create group of friends obtained by Facebook
 and tracking their position outside building but also INSIDE! By using Beacons!
