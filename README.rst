@@ -3,6 +3,7 @@ GroupTracking Drupal WebApp PHP Modules
 =======================================
 
 ** Track your friends everywhere! ** 
+
 .. image:: https://github.com/biagiobotticelli/Drupal_Php_Modules/blob/master/images/logo.jpg 
 	:height: 100px
    :width: 200 px
