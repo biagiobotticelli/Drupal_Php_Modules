@@ -3,7 +3,6 @@ GroupTracking Drupal WebApp PHP Modules
 =======================================
 
 .. image:: https://github.com/biagiobotticelli/Drupal_Php_Modules/blob/master/images/logo.jpg 
-
 Track your friends everywhere!
 
 GroupTracking is an Android application that wants to allow to create group of friends obtained by Facebook
@@ -26,7 +25,7 @@ An Android Service searches for beacons through the bluetooth:
 - **NO** beacon is found: the app uses the last GPS coordinates to get the position;
 - A beacon is found: the app uses the coordinates of the nearest beacon to get the postion;
 
-.. image:: https://github.com/FabFari/recipex/blob/master/app/screenshot/arch.png
+.. image:: https://github.com/biagiobotticelli/Drupal_Php_Modules/blob/master/images/arch.png
    :align: center
 
 Why do we insert a Drupal WebApp in the system?
@@ -44,17 +43,17 @@ getBeacons.php
 The first function is to get a list of the beacons that are available in the system.
 The php module create an empty page:
 
-.. image:: https://github.com/FabFari/recipex/blob/master/app/screenshot/getBeacon1.png
+.. image:: https://github.com/biagiobotticelli/Drupal_Php_Modules/blob/master/images/getBeacon1.png
    :align: center
    
 when the button "Get Beacons" is clicked: 
 
-.. image:: https://github.com/FabFari/recipex/blob/master/app/screenshot/getBeacon2.png
+.. image:: https://github.com/biagiobotticelli/Drupal_Php_Modules/blob/master/images/getBeacon2.png
    :align: center
    
 the module makes a GET request to the REST webserver to obtain the list of the available beacons of the system.
 
-.. image:: https://github.com/FabFari/recipex/blob/master/app/screenshot/getBeacon3.png
+.. image:: https://github.com/biagiobotticelli/Drupal_Php_Modules/blob/master/images/getBeacon3.png
    :align: center
 
 
